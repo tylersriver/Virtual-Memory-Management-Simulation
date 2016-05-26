@@ -37,10 +37,10 @@ int main() {
 	
     // *** Open Logical Addresses File ***
     ifstream file;
-    file.open("/Users/tyler.w.sriver/Google Drive/Spring/Operating Systems/Program 4/Program4Files/addresses.txt");
+    file.open("addresses.txt");
 
     // *** Open Output File **
-    ofstream output("/Users/tyler.w.sriver/Google Drive/Spring/Operating Systems/Program 4/Program4Files/output.txt");
+    ofstream output("output.txt");
 
 
     // *** While Loop For handling Addresses ***
@@ -82,7 +82,7 @@ int main() {
             {
                 // *** Open Backing Store ***
                 ifstream backingStore;
-                backingStore.open("/Users/tyler.w.sriver/Google Drive/Spring/Operating Systems/Program 4/Program4Files/BACKING_STORE.bin", ios::binary | ios::in);
+                backingStore.open("BACKING_STORE.bin", ios::binary | ios::in);
 
                 pageFault++;
                 // Find the page
